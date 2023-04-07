@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.adminSubSystemController">
+   <children>
+      <MenuBar fx:id="menuBar" prefHeight="22.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="insertUserSelection" mnemonicParsing="false" text="Insert User" />
+            </items>
+          </Menu>
+            <Menu fx:id="logoutMenu" mnemonicParsing="false" text="Logout" />
+            <Menu fx:id="exitMenu" mnemonicParsing="false" text="Exit" />
+        </menus>
+      </MenuBar>
+      <VBox layoutX="10.0" layoutY="25.0" prefHeight="370.0" prefWidth="578.0">
+         <children>
+            <Label prefHeight="52.0" prefWidth="600.0" text="Administrator" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label text="Users">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ListView fx:id="userList" prefHeight="242.0" prefWidth="551.0" />
+            <Button fx:id="removeButton" mnemonicParsing="false" text="Remove" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
